@@ -1,0 +1,415 @@
+@import url(https://cdn.discordthemes.net/file/notanotheranimetheme/scsl.css);
+/* Import any custom fonts here */
+
+@import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
+/* This uses the USRBG library to allow custom background themes in user profiles */
+
+/*@import url(https://nfld99.github.io/Better-Discord/Source_Code/Master_Code.css);
+/* Animations */
+
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Animations/Yes.css);
+/* Fonts https://nfld99.github.io/Better-Discord/Font_List.txt */
+
+/* To make editing this theme easier I recommend using Notepad++ , you can download it for free here - https://notepad-plus-plus.org/download/ */
+
+/* Any images you use MUST end with .jpg or .png or any other image extension */
+/* This is NOT a valid link, https://imgur.com/a/ycjL2 */
+/* THIS IS A VALID LINK https://i.imgur.com/rCqnrQ7.jpg */
+
+
+/* If you find an image I would STRONGLY recommend rehosting the image on imgur https://imgur.com/upload */
+
+
+/* This is left overs from one of the original themes this was based on, i left it in here beacuase it might be useful for troubleshooting later*/
+/*@import url(https://nfld99.github.io/Better-Discord/Source_Code/Master_Code.css);*/
+
+
+/* Animations */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Animations/Yes.css);
+/* Fonts https://nfld99.github.io/Better-Discord/Font_List.txt */
+
+@import url("https://discordstyles.github.io/HorizontalServerList/base.css");
+
+:root {
+  --HSL-server-icon-size: 45px;  /* Size of the server icons | DEFAULT: 40px */
+  --HSL-server-spacing: 3px;  /* Spacing between each server icon | DEFAULT: 10px */
+}
+
+/* rainbow mention */
+.interactive {
+    animation: rainbow 10s linear 0s infinite normal;
+}
+@keyframes rainbow {
+    0%   {color: #ff689d;}
+    16%  {color: #ff8e68;}
+    33%  {color: #fff868;}
+    50%  {color: #7eff68;}
+    58%  {color: #68ffff;}
+    66%  {color: #6874ff;}
+    83%  {color: #d168ff;}
+    100% {color: #ff689d;}
+}
+
+:root {
+	
+	 /*
+    Change the theme background
+    Default: https://i.imgur.com/j1Z6HVc.jpg
+    (This is the image that came with the original theme, The amoled background uses this link "https://github.com/MasterJPixel/amoled/blob/master/theme/amoled1080.png?raw=true")
+	THIS IS CURRENTLY DISABLED BECAUSE I AM USING HELLBOUND#9999's AMMOLED MODE
+    */
+    /*--background-image: url(https://github.com/MasterJPixel/amoled/blob/master/theme/amoled1080.png?raw=true);*/
+	
+    /*
+    Change your friends icon image
+    Default: https://cdn.discordapp.com/emojis/683138952353677331.gif?v=1
+    (Cute rainbow gay blob)
+    */
+    --friends-icon: url(https://cdn.discordapp.com/emojis/683138952353677331.gif?v=1);
+      /*https://cdn.discordapp.com/attachments/827625734163791912/856894153522937886/unknown.png*/
+      /*https://cdn.discordapp.com/emojis/683138952353677331.gif?v=1*/
+
+    /*
+    Change your friends icon iamge position
+    Default: center center
+    */
+    --friends-icon-position: center center;
+
+    /*
+    Change your friends icon image zoom
+    Default: 100% 
+    */
+    --friends-icon-zoom: 100%;
+
+    /*
+    Change the main theme color
+    Default: rgb(67, 181, 129)
+    */
+    --main-color: rgb(67, 181, 129);
+
+    /*
+    Change global transparency
+    You can use this to make your background image lighter or darker
+    Default: rgba(0, 0, 0, 0.8)
+    */
+    --main-transparency: rgba(0, 0, 0, 0.7);
+
+    /*
+    Change the unread server animation.
+    Replace it with "none" in order to remove any animations and use the main color instead
+    Default: rainbow
+    */
+    --unread-server-animation: rainbow;
+
+    /*
+    Change background color when you hover members or friends
+    Default: rgba(255, 255, 255, .15)
+    */
+    --hover-list-bg-color: rgba(255, 255, 255, .15);
+
+    /*
+    Change the color of the borders between messages
+    Default: hsla(0,0%,100%,.1)
+    */
+    --border-lines-color: hsla(0,0%,100%,.1);
+
+    /*
+    Change the scroll bar color
+    Default: rgba(255,255,255, .15)
+    */
+    --scroll-bar-color: rgba(217, 9, 141, 0.5);
+
+    /*
+    Change chat messages font size, you can use any unit: px, em, rem, %
+    Default: 16px
+    */
+    --font-size: 16px;
+
+    /*
+    Change the text color of a selected text channel or joined voice channel
+    Default: #f6f6f7
+    */
+    --selected-text-voice-color: #bdbdbd;
+
+    /*
+    Change the text color of a hovered text or voice channel
+    Default: rgba(255, 255, 255, 0.75)
+    */
+    --channel-hover-text-color: rgba(255, 255, 255, 0.75);
+
+    /*
+    Change the text color of an unread text channel
+    Default: #dcddde
+    */
+    --unread-text-color: #ffffff;
+
+    /*
+    Change the transparency of the user popout when clicking a member
+    Default: rgba(0, 0, 0, 0.8)
+    */
+    /*--user-popup-background: rgba(202, 100, 193, 0.0);*/
+    --user-popup-background: rgb(165, 84, 134);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+/* these import different libaries that this theme uses
+*/
+
+/* Animations */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Animations/Yes.css);
+/* Fonts */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/Yes.css);
+/* Channels */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Channels/No.css);
+/* Chat Title Bar */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Chat_Title_Bar/No.css);
+/* Invites */ 
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Invites/No.css);
+/* Member List */ 
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Members/No.css);
+/* Windows Bar */ 
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Windows_Bar/No.css);
+/* Offline Members */ 
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Offline/No.css);
+/* User Popout Footer */ 
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Hide/Popout_Footer/Yes.css);
+/* Transparency Patch */ 
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Transparency/No.css);
+/* Use Chat Bubbles By Shiz */
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Chat_Bubbles/No.css);
+
+
+
+/* the next ~230 lines are all imported to make the bot's tag rainbow. (this might also make other plugins use a rainbow tag for other things, for example i have a plugin that shows the server owner with a tag that simply says "owner", this code also makes that tag rainbow.)
+
+examples
+bot normal		https://cdn.discordapp.com/attachments/695810352650125344/746890342686523542/unknown.png
+bot rainbow		https://cdn.discordapp.com/attachments/695810352650125344/746891021073252412/unknown.png
+
+owner normal		https://cdn.discordapp.com/attachments/695810352650125344/746890553915867186/unknown.png
+owner rainbow		https://cdn.discordapp.com/attachments/695810352650125344/746890438073516042/unknown.png
+(these two, again. are a different plugin, the plugin can be had here if you desire it "https://betterdiscordlibrary.com/plugins/Owner%20Tag"
+*/
+
+large-3ChYtB:not(.popout-2fzvxG)::before {
+  color: rgba(0, 255, 0, .3);
+  font-size: 13px;
+  z-index: 1;
+  position: absolute;
+  left: 38.9%!important;
+  top: 115%;
+  padding-left: 2px;
+  padding-right: 4px;
+  border-radius: 2px;
+  margin-left: -3px;
+  transform: translate(0, 1px);
+  cursor: pointer;
+  transition: 100ms ease;
+  pointer-events: initial;
+  animation: Brainbow 3s infinite linear;
+}
+
+member-3W1lQa {
+  height: initial!important;
+  min-height: 0px!important;
+  overflow: visible!important;
+  transition: all 400ms ease-in-out!important;
+  border-bottom: 1px solid var(--Secondary-Main-Colour);
+}
+
+BotTagInvert-18-95s {
+  background-color: rgba(0, 216, 86, 0.8) !important;
+  animation: rainbow 20s infinite linear;
+}
+
+botTagInvert-18-95s, .botTagRegular-2HEhHi, span.botTagRegular-2HEhHi {
+  background-color: var(--Secondary-Background-Colour) !important;
+  color: var(--Main-Colour);
+  border: 1px solid var(--Main-Colour);
+  animation: rainbow 20s infinite linear;
+}
+
+theme-dark isLocalBot-38G0P0 {
+  background-image: linear-gradient(90deg, var(--Secondary-Background-Colour) 80%, var(--Main-Colour));
+  border-color: transparent;
+  box-shadow: 0px 0px 20px 0px red;
+  animation: fail 3s infinite linear;
+  color: var(--Secondary-Main-Colour);
+}
+
+botTag-2WPJ74{
+  padding: .022rem .275rem;
+}
+
+px-10SIf7.botTag-2WPJ74{
+  margin-top: -2px;
+}
+
+localBot-GrCgVt{
+  background: linear-gradient(to bottom, var(--Secondary-Background-Colour), var(--Secondary-Background-Colour), var(--Secondary-Main-Colour));
+  background-size: 100% 100%;
+  border: 1px solid var(--Secondary-Main-Colour);
+  border-radius: 5px;
+  transition: all 250ms;
+}
+
+localBot-GrCgVt:hover{
+  background: linear-gradient(to bottom, var(--Secondary-Background-Colour), var(--Secondary-Background-Colour), var(--Secondary-Main-Colour));
+  background-size: 100% 135%;
+  border: 1px solid var(--Main-Colour);
+  border-radius: 5px;
+  transition: all 250ms;
+}
+
+localBot-GrCgVt:before {
+  background-color: var(--Main-Colour);
+}
+
+span.botTagRegular-2HEhHi {
+  background-color: rgba(0, 216, 86, 0.8) !important;
+  animation: rainbow 20s infinite linear;
+}
+
+new-messages-indicator .new-messages-indicator-mention, .unread-mentions-indicator-bottom, .unreadMentionsIndicatorTop-gA6RCh {
+  background-color: transparent;
+  color: var(--Main-Colour);
+  text-shadow: 0 0 2px var(--Text-Shadow-Colour), 0 0 6px var(--Text-Shadow-Colour), 0 0 5px var(--Text-Shadow-Colour), 0 0 4px var(--Text-Shadow-Colour);
+}
+theme-dark .messages-popout-wrap .messages-popout .channel-separator .guild-name, .theme-dark .recent-mentions-popout .tab-bar-item, .theme-dark .recent-mentions-popout .mention-filter .label {
+  color: var(--Secondary-Main-Colour) !important;
+}
+
+
+
+
+
+
+/*@import url(https://raw.githack.com/hellbound1337/dark-discord/master/src/source.css);*/
+@import url(https://raw.githack.com/hellbound1337/dark-discord/master/src/source.css);
+
+
+/*
+.theme-dark,
+.theme-light,
+*/
+.theme-dark,
+.theme-light,
+
+
+:root {
+ /*--background-primary: #141414 !important;*/
+   --background-primary: #050505 !important;
+ 
+ /*--background-secondary: #111111 !important;*/
+   --background-secondary: #111111 !important;
+ 
+ /*--background-secondary-alt: #292929 !important;*/
+   --background-secondary-alt: #292929 !important;
+ 
+ /*--background-tertiary: #0c0c0c !important;*/
+   --background-tertiary: #111111 !important;
+ 
+ /*--background-accent: #242424 !important;*/
+   --background-accent: #ffffff !important;
+ 
+ /*--background-floating: black !important;*/
+   --background-floating: rgb(20, 84, 174) !important;
+   
+ /*--user-background: #18181b;*/
+   --user-background: #4075C0;
+ 
+ /*--background-modifier-hover: rgba(255, 255, 255, 0.01) !important;*/
+   --background-modifier-hover: rgba(255, 255, 255, 0.01) !important;
+ 
+ /*--background-modifier-active: rgba(255, 255, 255, 0.03) !important;*/
+   --background-modifier-active: rgba(255, 255, 255, 0.03) !important;
+ 
+ /*--background-modifier-selected: rgba(255, 255, 255, 0.04) !important;*/
+   --background-modifier-selected: rgba(255, 255, 255, 0.04) !important;
+ 
+ /*--background-modifier-accent: hsla(0, 0%, 100%, 0.06) !important;*/
+   --background-modifier-accent: hsla(0, 0%, 100%, 0.06) !important;
+ 
+ /*--deprecated-card-bg: rgba(0, 0, 0, 0.2) !important;*/
+   --deprecated-card-bg: rgba(0, 0, 0, 0.2) !important;
+ 
+ /*--deprecated-card-editable-bg: rgba(0, 0, 0, 0.1) !important;*/
+   --deprecated-card-editable-bg: rgba(0, 0, 0, 0.1) !important;
+ 
+ /*--channels-default: #9f9f9f !important;*/
+   --channels-default: #bdbdbd !important;
+ 
+ /*--text-muted: #b6b6b6 !important;*/
+   --text-muted: #9e9e9e !important;
+ 
+ /*--text-normal: #fbfbfb !important;*/
+   --text-normal: #ffffff !important;
+
+ /*--interactive-normal: #c8c8c8 !important;*/
+   --interactive-normal: #c8c8c8 !important;
+ 
+ /*--interactive-hover: #dcddde !important;*/
+   --interactive-hover: #dcddde !important;
+ 
+ /*--interactive-active: #fff !important;*/
+   --interactive-active: #fff !important;
+ 
+ /*--interactive-muted: #747474 !important;*/
+   --interactive-muted: #747474 !important;
+ 
+ /*--header-primary: white !important;*/
+   --header-primary: #ffffff  !important;
+ 
+ /*--header-secondary: #c9c9c9 !important;*/
+   --header-secondary: #ffffff  !important;
+   
+ /*--toast-box-shadow: rgba(0, 0, 0, 0.2) !important;*/
+   --toast-box-shadow: rgba(0, 0, 0, 0.2) !important;
+   
+   
+ 		--toast-background: var(--background-primary) !important;
+ 		--toast-header: var(--background-tertiary) !important;
+ 		--toast-contents: var(--background-secondary) !important;
+ 		--toast-border: var(--background-tertiary) !important;
+ 		--deprecated-text-input-bg: var(--deprecated-card-editable-bg) !important;
+ 		--deprecated-text-input-border: var(--background-floating) !important;
+ 		--deprecated-text-input-border-disabled: var(--background-tertiary) !important;
+ 		--activity-card-background: var(--background-primary) !important;
+ 		--channeltextarea-background: var(--background-accent) !important;
+ 
+}
+
+/* USRBG && Supporters */
+.header-QKLPzZ {
+	background: var(--user-background) center/cover no-repeat;
+}
+
+.userPopout-3XzG_A .header-2BwW8b {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: var(--user-popout-position) center;
+	background: var(--user-background);
+}
+
+/* Plugins: MemberCount */
+#MemberCount {
+	border-bottom: 1px solid #303032;
+	margin-top: 0 !important;
+}
+
+#MemberCount .membersGroup-v9BXpm {
+	padding: 12px 8px;
+	height: auto;
+}
